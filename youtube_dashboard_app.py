@@ -46,7 +46,8 @@ def audience_simple(country):
 # Data Loader
 # ==============================
 
-@st.cache_data
+# @st.cache_data
+@st.cache
 def load_data():
     """Load YouTube CSV data"""
     df_agg = pd.read_csv('Aggregated_Metrics_By_Video.csv').iloc[1:, :]
